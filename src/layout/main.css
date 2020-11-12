@@ -8,8 +8,6 @@
 .df{
     display: flex;
   justify-content: center;
-  animation-name: album;
-animation-delay: 2s;
 }
 .larim{
   width: 600px;
@@ -18,12 +16,13 @@ animation-delay: 2s;
 }
 .ccv{
   
-    border: 2px solid black;
+
     margin-left: 30px;
     margin-top: 20px;
 }
 
 .image{
+      border: 2px solid black;
     width: 300px;
     height: 240px;
 }
@@ -33,11 +32,4 @@ animation-delay: 2s;
  display: flex;
  justify-content: center;
  
-}
-
-@keyframes album{
-  from{opacity: 0;}
-to{ opacity: 0;}
-  
-
 }
