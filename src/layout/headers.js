@@ -35,7 +35,7 @@ class ImageSer extends React.Component{
             </div>
             <div className="container1">
                     {this.props.data.map(data => (
-                        <div className="ccv">
+                        <div className="ccv" onClick={this.ImageLarge.bind(this, data)}>
                             <img src={data} className="image" />
                         </div>
                     ))}
@@ -44,16 +44,11 @@ class ImageSer extends React.Component{
         )
     }
 }
-
 const image = [
     'img1.jpg' ,
    'img2.jpg' ,
    'img1.jpg' 
 ]
-
-
-
-
 function App() {
     return(
         <div  className="foto">
