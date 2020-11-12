@@ -5,7 +5,8 @@ class LArgeImage extends React.Component{
     render(){ 
         return(
         <div className="df">
-                <img src={this.props.img} className="larim" />
+                { this.props.img ? <img src={this.props.img} className="larim" /> : <img src="img2.jpg" className="larim" /> }
+              
         </div>
         )
     }
@@ -24,7 +25,7 @@ class ImageSer extends React.Component{
     render(){
         return(
             <div>
-        {this.state.img ? <LArgeImage img={this.state.img} /> : <h1>ada</h1> }
+     <LArgeImage img={this.state.img} /> 
             <div className="container1">
                 {this.props.data.map(data => (
                 <div className="ccv" onClick={this.ImageLarge.bind(this, data.image1)}>
